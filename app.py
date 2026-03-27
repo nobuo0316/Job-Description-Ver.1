@@ -4,7 +4,7 @@ from supabase import create_client
 st.title("Supabase test")
 
 try:
-    supabase = create_client(
+    client = create_client(
         st.secrets["SUPABASE_URL"],
         st.secrets["SUPABASE_KEY"]
     )
